@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 4.1 | SVGs</title>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation (reuse your existing nav here) ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="PowerIcon.png" alt="Power logo - click to return to Home" width="40" height="40" />
+      <span>ApplianceWatt</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="televisions.html">Televisions</a></li>
+      <li><a href="about.html" >About Us</a></li>
+      <li><a href="Exercise4.html" class="active">Exercise 4.1</a></li>
+      <li><a href="Chart.html" >Energy Chart</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="ex-section">
+      <h1>Exercise 4.1: Draw SVGs</h1>
+      <p>
+        This page shows the original SVG house and garden generated with GitHub Copilot,
+        and the version I customised afterwards, along with the changes I made.
+      </p>
+
+      <div class="ex-grid">
+        <div class="ex-card">
+          <h3>Before (Initial Copilot version)</h3>
+            <img src="assets/img/House.before.png" alt="Before version">
+
+        </div>
+
+        <div class="ex-card">
+          <h3>After (My customised version)</h3>
+          <img src="assets/img/House.after.png" alt="After version">
+        </div>
+      </div>
+
+
+      <h2>What I changed</h2>
+      <table class="change-table">
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Before</th>
+            <th>After</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Canvas size</td>
+            <td>viewBox 300×300</td>
+            <td>viewBox 400×300 (widened to fit more scenery)</td>
+          </tr>
+          <tr>
+            <td>Colours</td>
+            <td>Default sky/grass/house/roof colours</td>
+            <td>Sky, grass, house body and roof changed to new colours</td>
+          </tr>
+          <tr>
+            <td>"House" text label</td>
+            <td>Text label next to the house</td>
+            <td>Removed (replaced by "My Home" on the sign post)</td>
+          </tr>
+          <tr>
+            <td>Fence</td>
+            <td>White picket fence (polyline)</td>
+            <td>Removed</td>
+          </tr>
+          <tr>
+            <td>Door knob</td>
+            <td>Small circle on the door</td>
+            <td>Removed</td>
+          </tr>
+          <tr>
+            <td>Roof window</td>
+            <td>Round window (circle)</td>
+            <td>Removed</td>
+          </tr>
+          <tr>
+            <td>Flower bed</td>
+            <td>Row of flowers (circles) on the grass</td>
+            <td>Removed</td>
+          </tr>
+          <tr>
+            <td>Sun rays</td>
+            <td>Not present</td>
+            <td>Added — four short &lt;line&gt; elements around the sun</td>
+          </tr>
+          <tr>
+            <td>Clouds</td>
+            <td>Not present</td>
+            <td>Added — two clouds of overlapping &lt;ellipse&gt; shapes, each in a &lt;g&gt; positioned with <code>transform="translate(...)"</code>, one also scaled with <code>scale(0.8)</code></td>
+          </tr>
+          <tr>
+            <td>Chimney smoke</td>
+            <td>Not present</td>
+            <td>Added — curved &lt;path&gt; rising from the chimney</td>
+          </tr>
+          <tr>
+            <td>Second tree</td>
+            <td>Not present</td>
+            <td>Added — smaller tree positioned and scaled with <code>transform="translate(...) scale(0.7)"</code></td>
+          </tr>
+          <tr>
+            <td>Sign post</td>
+            <td>Not present</td>
+            <td>Added — &lt;line&gt; post, &lt;rect&gt; board, and &lt;text&gt; reading "My Home"</td>
+          </tr>
+          <tr>
+            <td>Windows</td>
+            <td>Two windows grouped in &lt;g&gt; with <code>transform="translate(...)"</code></td>
+            <td>Kept unchanged</td>
+          </tr>
+          <tr>
+            <td>Garden path</td>
+            <td>Curved &lt;path&gt;</td>
+            <td>Kept, made thicker with rounded ends</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

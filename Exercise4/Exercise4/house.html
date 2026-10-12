@@ -1,0 +1,40 @@
+
+
+House · HTML
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Exercise 4.1 - House and Garden</title></head>
+<body>
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- sky (rect) -->
+  <rect x="0" y="0" width="300" height="300" fill="skyblue"/>
+  <!-- grass (rect) -->
+  <rect x="0" y="180" width="300" height="120" fill="green"/>
+  <!-- sun (circle) -->
+  <circle cx="240" cy="50" r="22" fill="yellow"/>
+  <!-- house body (rect) -->
+  <rect x="90" y="120" width="120" height="80" fill="saddlebrown"/>
+  <!-- roof (polygon) -->
+  <polygon points="80,120 150,60 220,120" fill="peru"/>
+  <!-- chimney (rect) -->
+  <rect x="180" y="70" width="14" height="30" fill="firebrick"/>
+  <!-- door (rect) + knob (circle) -->
+  <rect x="140" y="155" width="26" height="45" fill="sienna"/>
+  <circle cx="160" cy="180" r="2" fill="black"/>
+  <!-- two windows in a group: same style, positioned with translate -->
+  <g fill="lightblue" stroke="white" stroke-width="2">
+    <rect x="0" y="0" width="24" height="24" transform="translate(102,135)"/>
+    <rect x="0" y="0" width="24" height="24" transform="translate(174,135)"/>
+  </g>
+  <!-- tree: trunk (line) + leaves (ellipse) -->
+  <line x1="40" y1="200" x2="40" y2="140" stroke="brown" stroke-width="8"/>
+  <ellipse cx="40" cy="125" rx="28" ry="26" fill="forestgreen"/>
+  <!-- path (path) -->
+  <path d="M150 300 C120 260, 200 240, 160 200" fill="none" stroke="orange" stroke-width="5"/>
+  
+
+
+</svg>
+</body>
+</html>
+ 
