@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Energy Chart | Appliance Energy Consumption Website</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="PowerIcon.png" alt="Power logo" width="40" height="40" />
+      <span>ApplianceWatt</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="televisions.html" >Televisions</a></li>
+      <li><a href="about.html" >About Us</a></li>
+      <li><a href="Exercise4.html">Exercise 4.1</a></li>
+      <li><a href="Chart.html" class="active">Energy Chart</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Appliance Energy Use Comparison</h2>
+    <div class="responsive-svg-container"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> Junyong. All rights reserved.</p>
+  </footer>
+  
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

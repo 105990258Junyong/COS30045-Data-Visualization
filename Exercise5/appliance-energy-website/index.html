@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Appliance Energy Consumption Website</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="PowerIcon.png" alt="Power logo - click to return to Home" width="40" height="40" />
+      <span>ApplianceWatt</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="televisions.html">Televisions</a></li>
+      <li><a href="about.html" >About Us</a></li>
+      <li><a href="Exercise4.html">Exercise 4.1</a></li>
+      <li><a href="Chart.html" >Energy Chart</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h1>Appliance Energy Consumption in Australia</h1>
+      <p>
+        Household appliances make up a significant share of electricity bills across Australia.
+        This site explores how everyday appliances - starting with televisions - consume energy,
+        and gives you a simple tool to estimate your own running costs.
+      </p>
+    </section>
+
+    <h2>Why Energy Consumption Matters</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Rising Electricity Costs</h3>
+        <p>Placeholder text: Australian households have seen electricity prices rise steadily,
+          making it more important than ever to understand which appliances use the most power.</p>
+      </div>
+      <div class="card">
+        <h3>Environmental Impact</h3>
+        <p>Placeholder text: Most of Australia's electricity still comes from non-renewable sources,
+          so reducing appliance energy use also reduces carbon emissions.</p>
+      </div>
+      <div class="card">
+        <h3>Smarter Choices</h3>
+        <p>Placeholder text: Comparing wattage and usage patterns before buying or using an appliance
+          can lead to noticeable long-term savings.</p>
+      </div>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        What uses the most electricity in an Australian home?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Placeholder text: Heating and cooling appliances typically use the most electricity,
+          followed by hot water systems, refrigeration, and entertainment devices like televisions.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        How is energy consumption measured?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Placeholder text: Energy consumption is measured in kilowatt-hours (kWh), calculated
+          from an appliance's wattage and how many hours per day it is used.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        Can I reduce my television's energy use?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Placeholder text: Yes - lowering screen brightness, enabling power-saving modes, and
+          switching off standby power can all reduce a television's overall energy consumption.</p>
+      </div>
+    </div>
+
+    <h2>Appliance Energy Calculator</h2>
+    <div class="card">
+      <p>Estimate how much energy and money an appliance uses based on its wattage, daily usage,
+        and your electricity price.</p>
+
+      <form id="energy-calculator-form" class="calculator-form">
+        <div>
+          <label for="wattage">Appliance power usage (watts)</label>
+          <input type="number" id="wattage" name="wattage" min="1" step="1" placeholder="e.g. 120" required />
+        </div>
+
+        <div>
+          <label for="hours-per-day">Average hours of use per day</label>
+          <input type="number" id="hours-per-day" name="hours-per-day" min="0" max="24" step="0.1" placeholder="e.g. 5" required />
+        </div>
+
+        <div>
+          <label for="price-per-kwh">Electricity price (cents per kWh)</label>
+          <input type="number" id="price-per-kwh" name="price-per-kwh" min="0" step="0.01" placeholder="e.g. 30" required />
+          <small>Enter the price in cents, e.g. 30 for 30c/kWh. The calculator converts this automatically.</small>
+        </div>
+
+        <button type="submit" class="btn">Calculate</button>
+        <p class="error-text" id="calc-error"></p>
+      </form>
+
+      <div id="results-panel"></div>
+      <h2>Typical Television Power Usage (55-inch)</h2>
+      <div id="bar-chart"></div>
+      <div id="line-chart"></div>
+      <div id="donut-chart"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> Junyong. All rights reserved.</p>
+  </footer>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/bar-chart.js"></script>
+  <script src="assets/js/line-chart.js"></script>
+  <script src="assets/js/donut-chart.js"></script>
+</body>
+</html>
