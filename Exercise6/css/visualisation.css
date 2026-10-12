@@ -1,0 +1,14 @@
+.responsive-svg-container svg { 
+    width: 100%; 
+    height: auto; 
+    background-color: #fffaf0; 
+} 
+
+.axis-label { 
+    font-size: 12px; 
+    fill: #333; 
+} 
+
+.tick text { 
+    font-size: 11px; 
+}
